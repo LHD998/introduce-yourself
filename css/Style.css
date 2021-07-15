@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1vw;
+    height: 1vh;
+    overflow: hidden;
+    background: url(../img/background.jpg);
+}
+
+.form-horizontal {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 840px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.form-group {
+    display: flex;
+}
+
+.avatar {
+    left: 30px;
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 50px 20px rgba(255, 255, 255, 1);
+}
+
+
+.avatar img {
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.avatar:hover {
+    width: 310px;
+    height: 410px;
+    left: 25px;
+    top: -5px;
+    transition: 0.5s;
+}
